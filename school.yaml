@@ -1,0 +1,8 @@
+---
+school:
+- name: DPS
+  principal: someone
+  students:
+  - rno: 12
+    name: utsav
+    marks: 95
