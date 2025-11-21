@@ -1,0 +1,40 @@
+# string variables
+name: utsav
+fruit: "mango"
+job: 'swe'
+
+bio: |
+ hi, i am utsav gupta.
+ i am just a normal guy.
+
+# write single line in multiple lines 
+message: >
+ this will
+ all be 
+ in one single line
+
+# same as
+message: !!str this will all be in one single line
+
+number: 6676
+marks: 96.67
+booleanValue: !!bool No # n,N, false, FALSE, False
+# same for true
+
+# specify the type
+zero: !!int 0
+positiveNum: !!int 45
+binaryNum: !!int 0b11001
+hexa: !!int 0x45
+exoponential numbers: 6.023E56
+
+# floating point number
+marks: !!float 87.88
+infinite: !!float .inf
+not a num: .nan
+
+# null
+surname: !!null Null # or null Null ~
+
+# dates and time
+date: !!timestamp 2025-11-21
