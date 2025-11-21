@@ -1,0 +1,61 @@
+# sparse seq: some of the keys of the seq will be empty
+sparse seq:
+ - hey
+ - buddy
+ -
+ - Null
+ - sup
+
+# nested sequence
+-
+ - mango
+ - apple 
+ - banana
+-
+ - marks
+ - roll nor
+ - date 
+
+# key value pairs are called maps
+!!map
+
+# nested mappings: map within an map
+name: Utsav Gupta
+role:
+  age: 20
+  job: student
+
+# same as 
+name: Utsav Gupta
+role: {age: 20, job: student}
+
+# set will allow you to have unique values
+names: !!set
+ ? utsav
+ ? kunal
+ ? ram
+
+# dictionary !!omap
+people: !!omap
+  - utsav:
+      name: utsav gupta
+      age: 20
+      height: 188
+  - rahul: 
+      name: rahul sharma
+      age: 45
+      height: 176    
+ 
+# reusing properties with anchors
+likings: &base 
+  fav fruit: mango
+  dislikes: apple
+
+person1:
+  name: utsav
+  <<: *likes
+    
+person2:
+  name: kunal
+  <<: *likes
+  dislikes: grapes  # overriding dislikes
