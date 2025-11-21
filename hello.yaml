@@ -10,4 +10,8 @@ cities:
 - new delhi
 - mumbai
 - chennai
-
+---
+cities: [new delhi, mumbai]
+---
+{mango: "yellow fruit", age: 44}
+...
